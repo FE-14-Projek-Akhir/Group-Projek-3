@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+:root {
+  --primary: #19345e;
+  --secondary: #f47522;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+/* navbar start */
+
+header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #c1c3c736;
+  z-index: 999;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  width: 30%;
+}
+
+.navbar .nav-menu .contact {
+  display: block;
+  padding: 10px 35px;
+  margin-left: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: 50px;
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.navbar .nav-menu .contact:hover {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.navbar .nav-menu .team-text {
+  color: var(--secondary);
+}
+
+.navbar .nav-menu li a {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar .nav-menu li a:hover {
+  color: var(--secondary);
+}
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.navbar .burger {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+/* navbar end */
+
+.team {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team .content {
+  margin: auto;
+}
+
+.team .content h2 {
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.team .content p {
+  font-weight: 300;
+  color: var(--primary);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container .contact-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icons p {
+  color: var(--primary);
+}
+
+.text-form {
+  margin-bottom: 80px;
+  margin-left: 50px;
+}
+
+.text-form .text h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.container .contact-info .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contact-info .box .text img {
+  width: 22px;
+  margin-left: 10px;
+}
+
+.content-form {
+  width: 50%;
+  display: flex;
+}
+
+.content-form form .text-sub {
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.content-form label span {
+  color: red;
+}
+
+.content-form form label {
+  color: var(--primary);
+}
+
+.content-form form .input-text::placeholder {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content-form input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content-form form textarea::placeholder {
+  font-size: 16px;
+  color: var(--primary);
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.content-form form .input-text {
+  border: 1px solid var(--secondary);
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  padding: 15px 30px;
+  margin: 20px 0;
+}
+
+textarea {
+  width: 100%;
+  border-color: var(--primary);
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.button {
+  background-color: var(--secondary);
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.icons-btn img {
+  width: 25px;
+  margin: 0 15px;
+}
+
+.icons-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  margin-top: 250px;
+  height: 140px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.icon img {
+  padding-right: 20px;
+  width: 50px;
+}
+
+.socmed p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.copyright p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* responsive*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar .logo {
+    margin-left: 40px;
+  }
+
+  .navbar .nav-menu {
+    display: none;
+  }
+
+  .navbar .burger {
+    display: block;
+    margin-right: 75px;
+  }
+
+  .team .container {
+    flex-direction: column;
+  }
+
+  .content-form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button {
+    margin: auto;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar .logo {
+    margin-left: 35px;
+  }
+
+  .navbar .burger {
+    margin-right: 40px;
+  }
+
+  .container .contact-info {
+    width: 100%;
+    align-items: center;
+  }
+
+  .team .content h2 {
+    font-size: 36px;
+  }
+
+  .content-form form .input-text::placeholder,
+  .content-form input::placeholder,
+  .content-form form textarea::placeholder {
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+  }
+
+  .socmed p {
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .copyright p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+}
